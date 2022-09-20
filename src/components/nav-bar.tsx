@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  AppBar, Box, Typography, styled, Toolbar,
+  AppBar, Box, Typography, styled, Toolbar, IconButton,
 } from '@mui/material';
 import { AddCircleRounded, AccountCircle } from '@mui/icons-material';
 import logo from '../assets/logo-white-sm.png';
@@ -20,15 +20,19 @@ const NavBar = () => (
       }}
       >
         <img src={logo} alt="logo" />
-        <Typography sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: '1rem' }}>Memory tool</Typography>
+        <Typography variant="h5" sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: '1rem' }}>Memory tool</Typography>
       </Box>
 
-      <Typography>About</Typography>
-      <Typography>Time line</Typography>
+      <Typography variant="h6">About</Typography>
+      <Typography variant="h6">Time line</Typography>
 
-      <AddCircleRounded />
+      <IconButton aria-label="create" sx={{ color: 'white' }}>
+        <AddCircleRounded />
+      </IconButton>
 
-      <AccountCircle />
+      <IconButton aria-label="profile" sx={{ color: 'white' }}>
+        <AccountCircle />
+      </IconButton>
 
     </StyleToolBar>
 

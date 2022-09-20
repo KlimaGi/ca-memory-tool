@@ -5,17 +5,16 @@ import {
 import { Circle, PanoramaFishEye } from '@mui/icons-material';
 
 const Icons = styled(Box)({
-  display: 'flex',
+  color: 'lightblue',
 });
 
 const LessonItemProgress = () => (
   <Card sx={{ margin: 2, padding: 1 }}>
     <Typography sx={{ borderBottom: '1px solid lightgray' }}>Lesson title</Typography>
 
-    <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+    <Box sx={{ display: 'flex', justifyContent: 'space-between', my: 1 }}>
       <Typography>date</Typography>
       <Icons>
-
         <Circle />
         <Circle />
         <Circle />

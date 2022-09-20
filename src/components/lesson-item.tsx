@@ -1,13 +1,19 @@
 import React from 'react';
-import { Card, Button, Typography } from '@mui/material';
+import {
+  Card, Box, Button, Typography,
+} from '@mui/material';
+import { Edit, Done } from '@mui/icons-material';
 
 const LessonItem = () => (
-  <Card sx={{ bgcolor: 'lightgray', margin: 2 }}>
-    <Button>Edit</Button>
-    <Typography>Title</Typography>
-    <Typography>Content</Typography>
+  <Card sx={{ bgcolor: 'lightgray', margin: 2, p: 2 }}>
+    <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+      <Typography variant="h5" component="h2" gutterBottom>Title</Typography>
+      <Button variant="contained" endIcon={<Edit />}>Edit</Button>
+    </Box>
 
-    <Button>Done</Button>
+    <Typography variant="body1" gutterBottom>Content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, ex voluptatibus ullam minus adipisci accusamus!</Typography>
+
+    <Button variant="contained" startIcon={<Done />}>Done</Button>
   </Card>
 );
 
