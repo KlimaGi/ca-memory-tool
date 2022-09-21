@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Box, FormControlLabel, Switch } from '@mui/material';
+import { FormControlLabel, Switch } from '@mui/material';
+import { Brightness4 } from '@mui/icons-material';
 
 // todo: instead of label text add moon icon (& sun)
 const ThemeSwitch = () => {
@@ -10,19 +11,18 @@ const ThemeSwitch = () => {
   };
 
   return (
-    <Box>
-      <FormControlLabel
-        label="Dark mode"
-        control={(
-          <Switch
-            checked={checked}
-            onChange={handleChange}
-            size="small"
-            color="secondary"
-          />
-        )}
-      />
-    </Box>
+
+    <FormControlLabel
+      label={<Brightness4 />}
+      control={(
+        <Switch
+          checked={checked}
+          onChange={handleChange}
+          color="default"
+        />
+      )}
+    />
+
   );
 };
 export default ThemeSwitch;
