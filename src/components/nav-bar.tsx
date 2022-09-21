@@ -4,6 +4,7 @@ import {
 } from '@mui/material';
 import { AddCircleRounded, AccountCircle } from '@mui/icons-material';
 import logo from '../assets/logo-white-sm.png';
+import ThemeSwitch from './theme-switch';
 
 const StyleToolBar = styled(Toolbar)({
   display: 'flex',
@@ -25,6 +26,8 @@ const NavBar = () => (
 
       <Typography variant="h6">About</Typography>
       <Typography variant="h6">Time line</Typography>
+
+      <ThemeSwitch />
 
       <IconButton aria-label="create" sx={{ color: 'white' }}>
         <AddCircleRounded />
