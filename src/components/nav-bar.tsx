@@ -12,7 +12,7 @@ const StyleToolBar = styled(Toolbar)({
 });
 
 const NavBar = () => (
-  <AppBar position="sticky">
+  <AppBar position="sticky" sx={{ bgcolor: 'grey.400' }}>
     <StyleToolBar>
       <Box sx={{
         padding: '0.5rem',
