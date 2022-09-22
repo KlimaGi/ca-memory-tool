@@ -7,7 +7,6 @@ const TimeLine = () => (
     <LessonItemProgress />
     <LessonItemProgress />
     <LessonItemProgress />
-
   </Box>
 );
 

@@ -6,7 +6,7 @@ import {
   Person, Mail, Visibility, VisibilityOff,
 } from '@mui/icons-material';
 
-const Login = () => {
+const LoginPage = () => {
   // todo: validation with formik
   //  add background image
   // fix formatting
@@ -64,4 +64,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;
