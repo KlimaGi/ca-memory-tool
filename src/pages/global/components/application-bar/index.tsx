@@ -3,7 +3,7 @@ import {
   AppBar, Box, Typography, styled, Toolbar, IconButton, Stack, Button,
 } from '@mui/material';
 import { AddCircleRounded, AccountCircle } from '@mui/icons-material';
-import logo from '../assets/logo-white-sm.png';
+import logo from '../../../../assets/logo-white-sm.png';
 import ThemeSwitch from './theme-switch';
 
 const StyleToolBar = styled(Toolbar)({
