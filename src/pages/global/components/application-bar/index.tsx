@@ -20,7 +20,7 @@ const NavBar = () => (
         alignItems: 'center',
       }}
       >
-        <IconButton size="small" edge="start" aria-label="logo">
+        <IconButton size="small" edge="start" aria-label="logo" href="/">
           <img src={logo} alt="logo" />
         </IconButton>
         <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' }, marginLeft: '1rem', flexGrow: 1 }}>Memory tool</Typography>
@@ -28,7 +28,7 @@ const NavBar = () => (
 
       <Stack direction="row" spacing={2}>
         <ThemeSwitch />
-        <Button color="inherit">About</Button>
+        <Button href="/about" color="inherit">About</Button>
         <Button color="inherit">Time line</Button>
 
         <IconButton aria-label="create" sx={{ color: 'white' }}>
