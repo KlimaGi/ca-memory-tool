@@ -7,7 +7,7 @@ import { Edit, Done } from '@mui/icons-material';
 const LessonItem = () => (
   <Paper sx={{ bgcolor: 'grey.A200', margin: 2, p: 4 }} elevation={4}>
     <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
-      <Typography variant="h5" component="h2" gutterBottom>Title</Typography>
+      <Typography variant="h5" component="h2" gutterBottom sx={(theme) => ({ color: theme.palette.myColor.main })}>Title</Typography>
       <Button variant="contained" endIcon={<Edit />} sx={{ bgcolor: 'grey.500' }}>Edit</Button>
     </Box>
 
