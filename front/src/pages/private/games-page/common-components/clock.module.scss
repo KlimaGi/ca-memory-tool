@@ -1,0 +1,117 @@
+@import 'variables';
+
+.game-container {
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 52rem;
+  // border: 1px solid #a21381;
+  gap: 1rem;
+  position: relative;
+}
+
+.rule-block {
+  // width: 60%;
+  display: flex;
+  align-items: center;
+  // border: 1px solid #a21381;
+  position: absolute;
+  left: -18px;
+  top: 15.5rem;
+}
+
+.game-item {
+  //border: 1px solid #a21381;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.clock {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border: 5px solid $color-semi-dark;
+  background-color: $color-semi-dark;
+  border-radius: 50%;
+  width: 14.5rem;
+  height: 14.3rem;
+}
+
+.clock-block {
+  width: 14.6rem;
+  height: 14.4rem;
+  //   border: 1px solid #a21381;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 14.5rem;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.input-container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1.4rem;
+}
+
+.input-label {
+  width: 6.5rem;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.button {
+  padding: 1rem;
+  box-sizing: border-box;
+  border-style: none;
+  background-color: $color-light;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-semi-light;
+    border-style: none;
+  }
+}
+
+.answer-show {
+  display: block;
+  width: 100%;
+}
+
+.answer-hide {
+  @extend .answer-show;
+  opacity: 0;
+}
+
+.correct {
+  background-color: $color-light-green;
+  border-top: 3px solid $color-green;
+  padding: 1rem;
+  margin-top: -1rem;
+
+}
+
+.wrong {
+  background-color: $color-light-red;
+  border-top: 3px solid $color-semi-red;
+  padding: 1rem;
+  margin-top: -1rem;
+}
+
+.wrong-clock {
+  background-color: $color-light-red;
+  padding: 0.1rem;
+  margin-top: 0.2rem;
+}

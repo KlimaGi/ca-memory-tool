@@ -1,0 +1,64 @@
+@import '../../../../styles/variables';
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-layer {
+  height: 100vh;
+
+  background-image: url("../../../../assets/image-bg.png");
+  background-size: cover;
+
+  @extend .center;
+  flex-direction: column;
+}
+
+.logo-container {
+  width: 30rem;
+  padding: 2rem 1rem 1rem;
+  background-color: $color-light-opacity;
+
+  @extend .center;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0 1rem;
+    width: 100%;
+  }
+}
+
+.form {
+  background-color: $color-light-opacity;
+  @extend .center;
+  flex-direction: column;
+  width: 30rem;
+  padding: 1rem 1rem 2rem;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0 1rem;
+    width: 100vw;
+  }
+
+  input {
+    padding: 0.8rem;
+    margin: 0.3rem;
+    border-style: none;
+
+    &:focus-visible {
+      outline: none;
+      border-bottom: 1px solid $color-dark;
+    }
+  }
+
+  a {
+    padding: 0.1rem 0.3rem;
+    border-bottom: 1px solid $color-dark;
+    text-decoration: none;
+  }
+}
+
+.error-msg {
+  color: $color-red;
+}

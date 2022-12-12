@@ -10,3 +10,6 @@
   * Savo puslapiui sukurti atskirus esybių puslapius, naudojant responsive Routes
     * parsiųskite duomenis naudodami dinaminio route'o id
     * Atvaizduokite gautus duomenis visiems ekrano dydžiamas (nepersistenkit anksčiau laiko)
+
+    // todo: 
+    - spalvas sukurtas pritaikyti, pakoreguotfa-inverse
